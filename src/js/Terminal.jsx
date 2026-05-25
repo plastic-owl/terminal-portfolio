@@ -167,7 +167,7 @@ function Terminal() {
         <ul className='previousCommands' id='console23'>
           {prevusedCommand.map((item, index) => {
             if (item.match(new RegExp(`\\b${"discography"}\\b`, 'g'))) {
-              return <li key={index}>{item}<br></br><br></br>2026: <span style={{ color: "rgb(68, 110, 250)" }}>Shade's Resignation</span><br></br><br></br></li>;
+              return <li key={index}>{item}<br></br><br></br>2026: <span style={{ color: "rgb(68, 110, 250)" }}>Shades Resignation</span><br></br><br></br></li>;
             }
             else if (item.match(new RegExp(`\\b${"github"}\\b`, 'g'))) {
               return <li key={index}>{item}<br></br><br></br><span style={{ color: "#c9c9c9" }}>Opened the Spotify profile in a new tab: https://open.spotify.com/artist/5lKfYEzi1sblgBjgZHvS0t?si=ALbnaENiQXSVFzWB6MKktg</span><br></br><br></br></li>;
@@ -232,11 +232,11 @@ function Terminal() {
               </div>
             } else {
               return <div><li key={index}>{item}</li>
-                bash: {item.replace("guest@reiynstudio.ink:~$", '')}: command not found</div>;
+                bash: {item.replace("owl@earbone.com:~$", '')}: command not found</div>;
             }
           })}
         </ul>
-        {Text3.includes("Access") ? <span className='commands'><span className='userPrefix'>guest@reiynstudio.ink:~$</span> <input type="text" id="command" name="command" autoFocus></input></span> : ""}
+        {Text3.includes("Access") ? <span className='commands'><span className='userPrefix'>owl@earbone.com:~$</span> <input type="text" id="command" name="command" autoFocus></input></span> : ""}
       </div>
     </div>
   );
