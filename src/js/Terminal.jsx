@@ -88,8 +88,8 @@ function Terminal() {
           while (id--) {
             clearInterval(id);
           }
-          setText1("ssh guest@reiynstudio.ink")
-          setText2("guest@reiynstudio.ink's password:");
+          setText1("ssh plasticowl@earbonerecords.com")
+          setText2("plasticowl@earbonerecords.com's password:");
           setText3("Access Granted!")
         }
         const CommandArea = document.getElementById("command");
@@ -111,10 +111,10 @@ function Terminal() {
 
     });
 
-    Typewriter("ssh guest@reiynstudio.ink", 100, setText1)
+    Typewriter("ssh plasticowl@earbonerecords.com", 100, setText1)
 
     setTimeout(() => {
-      setText2("guest@reiynstudio.ink's password:▮");
+      setText2("plasticowl@earbonerecords.com's password:▮");
     }, 3000);
 
     setTimeout(() => {
@@ -122,11 +122,11 @@ function Terminal() {
     }, 4300);
 
     setTimeout(() => {
-      setText3("Connecting to guest@reiynstudio.ink...");
+      setText3("Connecting to plasticowl@earbonerecords.com...");
     }, 4300);
 
     setTimeout(() => {
-      setText2("guest@reiynstudio.ink's password:");
+      setText2("plasticowl@earbonerecords.com's password:");
       setText3("> Access granted.");
     }, 7300);
 
