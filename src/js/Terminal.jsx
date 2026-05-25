@@ -156,21 +156,21 @@ function Terminal() {
   </pre>
 ) : null}
 
-        {Text3.includes("Access") ? <span>What is this? It's a terminal simulation portfolio template. <a href="https://reiynstudio.ink">(https://reiynstudio.ink)</a></span> : ""}<br />
+        {Text3.includes("Access") ? <span>Welcome to OwlOS
         {Text3.includes("Access") ? <span><span style={{ color: "skyblue" }}>Available Commands:</span></span> : ""}
-        {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>General: </span> about, discord, radio, projects, hacksim, clear</span> : ""}
-        {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>Links:</span> github, mysite, source</span> : ""}
+        {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>General: </span> discography, spotify, youtube, twitter, apple music, clear</span> : ""}
+        {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>Links:</span> merch source</span> : ""}
 
         <br></br>
         {Text3.includes("Access") ? <span>Thank you for visiting!◝(ᵔᵕᵔ)◜</span> : ""}
         <br></br>
         <ul className='previousCommands' id='console23'>
           {prevusedCommand.map((item, index) => {
-            if (item.match(new RegExp(`\\b${"discord"}\\b`, 'g'))) {
-              return <li key={index}>{item}<br></br><br></br>My discord: <span style={{ color: "rgb(68, 110, 250)" }}>@iamreiyn</span><br></br><br></br></li>;
+            if (item.match(new RegExp(`\\b${"discography"}\\b`, 'g'))) {
+              return <li key={index}>{item}<br></br><br></br>2026: <span style={{ color: "rgb(68, 110, 250)" }}>Shade's Resignation</span><br></br><br></br></li>;
             }
             else if (item.match(new RegExp(`\\b${"github"}\\b`, 'g'))) {
-              return <li key={index}>{item}<br></br><br></br><span style={{ color: "#c9c9c9" }}>Opened my GitHub profile in a new tab: https://github.com/iamreiyn</span><br></br><br></br></li>;
+              return <li key={index}>{item}<br></br><br></br><span style={{ color: "#c9c9c9" }}>Opened the Spotify profile in a new tab: https://open.spotify.com/artist/5lKfYEzi1sblgBjgZHvS0t?si=ALbnaENiQXSVFzWB6MKktg</span><br></br><br></br></li>;
             }
             else if (item.match(new RegExp(`\\b${"projects"}\\b`, 'g'))) {
               return <div><li key={index}>{item}</li>
